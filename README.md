@@ -1,2 +1,2 @@
 # ravel-supports
-Laravel Supports: some helper class for Laravel Prjects
+Laravel Supports: some helper classes for Laravel Projects
