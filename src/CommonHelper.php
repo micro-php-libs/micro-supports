@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace MicroPhpLibs\RavelSupports;
+namespace MicroPhpLibs\MicroSupports;
 
 use Illuminate\Support\Traits\Macroable;
 

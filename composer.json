@@ -1,5 +1,5 @@
 {
-    "name": "micro-php-libs/ravel-supports",
+    "name": "micro-php-libs/micro-supports",
     "description": "Laravel Supports: some helper classes for Laravel Projects",
     "license": "MIT",
     "authors": [
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MicroPhpLibs\\RavelSupports\\": "src/"
+            "MicroPhpLibs\\MicroSupports\\": "src/"
         },
         "files": [
             "./src/Misc/micro_helper.php"
@@ -27,13 +27,13 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "MicroPhpLibs\\RavelSupports\\Tests\\": "tests"
+            "MicroPhpLibs\\MicroSupports\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "MicroPhpLibs\\RavelSupports\\RavelSupportsServiceProvider"
+              "MicroSupportsServiceProvider"
             ]
         }
     }

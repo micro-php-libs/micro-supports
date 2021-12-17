@@ -1,10 +1,10 @@
 <?php
 
-namespace MicroPhpLibs\RavelSupports;
+namespace MicroPhpLibs\MicroSupports;
 
 use Illuminate\Support\ServiceProvider;
 
-class RavelSupportsServiceProvider extends ServiceProvider
+class MicroSupportsServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -13,10 +13,10 @@ class RavelSupportsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // php artisan vendor:publish --tag=ravel-supports
+        // php artisan vendor:publish --tag=micro-supports
 //        $this->publishes([
-//            __DIR__.'/ravel-supports.php' => config_path('ravel-supports.php')
-//        ], 'ravel-supports');
+//            __DIR__.'/micro-supports.php' => config_path('micro-supports.php')
+//        ], 'micro-supports');
     }
 
     /**
@@ -27,7 +27,7 @@ class RavelSupportsServiceProvider extends ServiceProvider
     public function boot()
     {
 //        $this->mergeConfigFrom(
-//            __DIR__.'/ravel-supports.php', 'ravel-supports.php'
+//            __DIR__.'/micro-supports.php', 'micro-supports.php'
 //        );
     }
 }

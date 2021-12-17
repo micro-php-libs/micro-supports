@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace MicroPhpLibs\RavelSupports\Traits;
+namespace MicroPhpLibs\MicroSupports\Traits;
 
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Collection;

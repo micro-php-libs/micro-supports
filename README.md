@@ -15,14 +15,14 @@ Config repository composer.json
 ```
 {
     "type": "vcs",
-    "url": "https://github.com/micro-php-libs/ravel-supports.git"
+    "url": "https://github.com/micro-php-libs/micro-supports.git"
 }
 ```
 
 Then add the package to dependency
 
 ```
-"micro-php-libs/ravel-supports": "dev-master",
+"micro-php-libs/micro-supports": "dev-master",
 ```
 
 ## Supports

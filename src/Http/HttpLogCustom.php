@@ -21,11 +21,11 @@
  * ```
  * and modify config http-logger.php
  * ```
- * 'log_writer' => \MicroPhpLibs\RavelSupports\HttpLogCustom::class,
+ * 'log_writer' => \MicroPhpLibs\MicroSupports\HttpLogCustom::class,
  * ```
  */
 
-namespace MicroPhpLibs\RavelSupports\Http;
+namespace MicroPhpLibs\MicroSupports\Http;
 
 
 

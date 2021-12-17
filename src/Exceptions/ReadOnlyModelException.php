@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace MicroPhpLibs\RavelSupports\Exceptions;
+namespace MicroPhpLibs\MicroSupports\Exceptions;
 
 use RuntimeException;
 

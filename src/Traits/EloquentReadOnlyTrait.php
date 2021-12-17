@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace MicroPhpLibs\RavelSupports\Traits;
+namespace MicroPhpLibs\MicroSupports\Traits;
 
-use MicroPhpLibs\RavelSupports\Exceptions\ReadOnlyModelException;
+use MicroPhpLibs\MicroSupports\Exceptions\ReadOnlyModelException;
 use Illuminate\Database\Eloquent\Builder;
 
 /**
