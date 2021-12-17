@@ -15,7 +15,7 @@ Config repository composer.json
 ```
 {
     "type": "vcs",
-    "url": "https://github.com/micro-php-libs/micro-supports.git"
+    "url": "https://personal-access-token@github.com/micro-php-libs/micro-supports.git"
 }
 ```
 
@@ -41,15 +41,28 @@ Then add the package to dependency
 - Custom Log class for spatie/laravel-http-logger
 - Json response wrapper 
 
+**Array**
+- Array to XML 
+
+**Validation Rules**
+- Japan phone
+- Base64
+- Base64 Image
+- Kanji string
+- Kana string
+
+**Services**
+- Image Imagick: make image, change gray scale, change dpi
+
 **Common Helper**
 - check using Trait class
 
 ## NOTE
 
-- For my usage, if it can help you in someway then great.
+- For internal usage, if it can help you in someway then great.
 - No promise solve your issue
-- It opens then feel free to fork and fix or add your changes if needed
 - No testing, not sure if it still has bugs
+- Use it if you were being allowed by author
 
 ## License
 
