@@ -1,7 +1,7 @@
 <?php
 
-namespace App\Rules;
 
+namespace MicroPhpLibs\MicroSupports\RuleSupports;
 use Illuminate\Contracts\Validation\Rule;
 
 class Base64ImageRule implements Rule
