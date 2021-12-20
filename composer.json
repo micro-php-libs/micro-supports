@@ -29,5 +29,12 @@
         "psr-4": {
             "MicroPhpLibs\\MicroSupports\\Tests\\": "tests"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "MicroPhpLibs\\MicroSupports\\MicroSupportsServiceProvider"
+            ]
+        }
     }
 }
