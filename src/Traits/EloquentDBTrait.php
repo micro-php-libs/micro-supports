@@ -22,7 +22,7 @@ trait EloquentDBTrait
      */
     public function getConnection(string $table)
     {
-        return DB::table($table)->getConnection();
+        return $this->getQuery($table)->getConnection();
     }
 
     /**
@@ -39,7 +39,7 @@ trait EloquentDBTrait
         foreach ($chunkRecords as $chunk) {
 
             /** @var Collection $chunk */
-            DB::table($table)->insert($chunk->toArray());
+            $this->getQuery($table)->insert($chunk->toArray());
         }
     }
 
@@ -49,7 +49,7 @@ trait EloquentDBTrait
      */
     public function saveData(string $table, $data)
     {
-        DB::table($table)->insert($data);
+        $this->getQuery($table)->insert($data);
     }
 
     /**
@@ -71,7 +71,7 @@ trait EloquentDBTrait
      */
     public function updateData(string $table, $data)
     {
-        return DB::table($table)->update($data);
+        return $this->getQuery($table)->update($data);
     }
 
     /**
@@ -81,7 +81,7 @@ trait EloquentDBTrait
      */
     public function deleteData(string $table, $id)
     {
-        return DB::table($table)->delete($id);
+        return $this->getQuery($table)->delete($id);
     }
 
     /**
@@ -99,7 +99,10 @@ trait EloquentDBTrait
      */
     public function getQuery(string $table)
     {
-        return DB::table($table)->newQuery();
+        if ($this->connection) {
+            return DB::connection($this->connection)->table($table);
+        }
+        return DB::table($table);
     }
 
     /**
